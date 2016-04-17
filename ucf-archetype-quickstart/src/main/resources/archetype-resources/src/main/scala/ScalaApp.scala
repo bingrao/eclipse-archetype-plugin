@@ -1,14 +1,10 @@
 package ${package};
 
 /**
-  * @author ${user.name}
+  * @author 
   */
-object ScalaAppApp {
-
-  def foo(x : Array[String]) = x.foldLeft("")((a,b) => a + b)
-
-  def main(args : Array[String]) {
-    println( "Hello World!" )
-    println("concat arguments = " + foo(args))
+class ScalaApp {
+  def printHello(){
+    println("Hello World from Scala");
   }
 }

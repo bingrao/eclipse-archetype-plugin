@@ -1,7 +1,7 @@
 package ${package};
 
 /**
- * @author ${user.name}
+ * @author 
  */
 import junit.framework.Test;
 import junit.framework.TestCase;
@@ -30,5 +30,11 @@ public class JavaTestApp extends TestCase{
     public void testApp()
     {
         assertTrue( true );
+    }
+    public void testPrint(){
+    	ScalaApp tmpScala = new ScalaApp();
+    	tmpScala.printHello();	
+    	JavaApp tmpJava = new JavaApp();
+    	tmpJava.printJavaHello();
     }
 }

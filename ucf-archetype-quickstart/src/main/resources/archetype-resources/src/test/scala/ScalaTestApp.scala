@@ -1,13 +1,18 @@
 package ${package};
 /**
-  * @author ${user.name}
+  * @author
   */
-object ScalaTestApp {
+import org.junit.Test
+import org.junit.Assert._
 
-  def foo(x : Array[String]) = x.foldLeft("")((a,b) => a + b)
-
-  def main(args : Array[String]) {
-    println( "Hello World!" )
-    println("concat arguments = " + foo(args))
+class ScalaTestAPP {
+  @Test def testAdd() {
+    assertTrue(true);
+  }
+  @Test def testPrint(){
+    val tmpScala:ScalaApp = new ScalaApp();
+    tmpScala.printHello();
+    val tmpJava:JavaApp = new JavaApp();
+    tmpJava.printJavaHello();
   }
 }
