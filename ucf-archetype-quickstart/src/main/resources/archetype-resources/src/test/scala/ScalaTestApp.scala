@@ -7,12 +7,7 @@ import org.junit.Assert._
 
 class ScalaTestAPP {
   @Test def testAdd() {
+    println("Hello World From Scala");
     assertTrue(true);
-  }
-  @Test def testPrint(){
-    val tmpScala:ScalaApp = new ScalaApp();
-    tmpScala.printHello();
-    val tmpJava:JavaApp = new JavaApp();
-    tmpJava.printJavaHello();
   }
 }

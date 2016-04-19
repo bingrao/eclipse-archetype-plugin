@@ -29,12 +29,7 @@ public class JavaTestApp extends TestCase{
      */
     public void testApp()
     {
+    	System.out.println("Hello World From Java");
         assertTrue( true );
-    }
-    public void testPrint(){
-    	ScalaApp tmpScala = new ScalaApp();
-    	tmpScala.printHello();	
-    	JavaApp tmpJava = new JavaApp();
-    	tmpJava.printJavaHello();
     }
 }
