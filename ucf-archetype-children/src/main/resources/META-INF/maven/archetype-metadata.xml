@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor name="ucf-archetype-children">
+    <requiredProperties>
+        <requiredProperty key="directiveName">
+            <defaultValue>directive-name</defaultValue>
+        </requiredProperty>
+    </requiredProperties>
+    <fileSets>
+        <fileSet filtered="true" encoding="UTF-8" packaged="true">
+            <directory>src/main/java/</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="true">
+            <directory>src/main/scala/</directory>
+            <includes>
+                <include>**/*.scala</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="true">
+            <directory>src/test/java/</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="true">
+            <directory>src/test/scala/</directory>
+            <includes>
+                <include>**/*.scala</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+</archetype-descriptor>
