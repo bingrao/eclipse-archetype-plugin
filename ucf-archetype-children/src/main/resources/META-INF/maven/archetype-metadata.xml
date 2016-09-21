@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<archetype-descriptor name="ucf-archetype-children">
+<archetype-descriptor name="ucf-archetype-quickstart">
     <requiredProperties>
         <requiredProperty key="directiveName">
             <defaultValue>directive-name</defaultValue>

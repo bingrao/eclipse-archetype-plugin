@@ -4,10 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  	<groupId>${groupId}</groupId>
-  	<artifactId>${artifactId}</artifactId>
-  	<version>${version}</version>
-  	<name>${artifactId}</name>
+  	<groupId>org.ucf.test</groupId>
+  	<artifactId>ScalaLearning</artifactId>
+  	<version>0.0.1-SNAPSHOT</version>
+  	<name>ScalaLearning</name>
   	<packaging>jar</packaging>
 
      <properties>
@@ -63,6 +63,25 @@
 			<artifactId>scalatest_${scala.binary.version}</artifactId>
 			<version>3.0.0-M12</version>
 		</dependency>
+		
+		
+		<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+		<dependency>
+    		<groupId>com.google.guava</groupId>
+    		<artifactId>guava</artifactId>
+    		<version>r05</version>
+		</dependency>
+
+		
+		<!-- https://mvnrepository.com/artifact/com.github.mlangc/bracket-expression-beautifier_2.11 -->
+<dependency>
+    <groupId>com.github.mlangc</groupId>
+    <artifactId>bracket-expression-beautifier_2.11</artifactId>
+    <version>1.0</version>
+</dependency>
+		
+		
+		
     </dependencies>
 
   <build>
