@@ -1,4 +1,4 @@
-package org.ucf.test
+
 object TrivialObject{
   def f(x:Int) = y+z
 }
