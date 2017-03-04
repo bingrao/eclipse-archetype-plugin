@@ -1,1 +1,0 @@
-#This directory just include your resource files

@@ -1,7 +1,9 @@
-You can use following maven commands to run your application.
-#Run Java Program 
-mvn exec:java -Dexec.mainClass="com.jhh.Main"  
-mvn exec:java -Dexec.mainClass="akka.Main" -Dexec.args="com.jhh.HelloWorld" 
+# eclipse archetype plugin
+This archetype plugin is to help you build a maven project in which you can create a java or scala class and these two kinds of class would call each other. 
 
-#Run Scala Program
-mvn scala:run -DmainClass=com.jhh.App -DaddArgs="arg1|arg2|arg3"
+
+# How to use
+1.  Clone the project from github. 
+2.  Use "mvn install" command to install it into your local repository 
+3.  Configure your local repository.
+
