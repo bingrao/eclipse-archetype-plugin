@@ -13,6 +13,10 @@ mvn scala:run -DmainClass=com.jhh.App -DaddArgs="arg1|arg2|arg3"
 #Assembly all project into a single jar file 
 ```
 mvn clean compile assembly:single
+
+or
+
+mvn clean compile package
 ```
 After the above command, there are two jar files would be generated: 
 1. a jar file with all depandent packages
