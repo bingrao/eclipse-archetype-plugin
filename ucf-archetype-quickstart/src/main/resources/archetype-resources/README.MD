@@ -46,3 +46,6 @@ README.MD	pom.xml		src		target		test.iml
 $ java -jar target/test-1.0-SNAPSHOT-jar-with-dependencies.jar 
 Hello World from Scala
 ```
+
+In the pom file,  "{package}.ScalaApp" is set as the main entry class of the project. 
+If you want to switch to "{package}.JavaApp", you just modify pom file
