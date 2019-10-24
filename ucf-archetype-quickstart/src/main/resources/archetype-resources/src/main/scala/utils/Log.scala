@@ -1,7 +1,7 @@
-package ${package}
+package ${package}.utils
 import  org.apache.log4j.Logger
 
-class Logger(name:String){
+class Log(name:String){
   private val logger = Logger.getLogger(name)
 
   def info(message:String) = logger.info(message)

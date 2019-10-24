@@ -11,8 +11,8 @@
   	<packaging>jar</packaging>
 
      <properties>
-         <scala.version>2.12.10</scala.version>
-         <scala.binary.version>2.12</scala.binary.version>
+         <scala.version>2.11.12</scala.version>
+         <scala.binary.version>2.11</scala.binary.version>
          <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
          <project.main.class>${groupId}.ScalaApp</project.main.class>
          <project.premain.class>${groupId}.ScalaApp</project.premain.class>
@@ -61,7 +61,7 @@
         <dependency>
             <groupId>org.specs2</groupId>
       		<artifactId>specs2_${scala.binary.version}</artifactId>
-      		<version>3.8.9</version>
+      		<version>3.3.1</version>
             <scope>test</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/junit/junit -->

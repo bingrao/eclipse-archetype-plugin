@@ -9,6 +9,7 @@
     </sources>
     <resources>
         <resource>src/main/resource/*.*</resource>
+        <resource>.gitignore</resource>
     </resources>
     
     <testSources>
