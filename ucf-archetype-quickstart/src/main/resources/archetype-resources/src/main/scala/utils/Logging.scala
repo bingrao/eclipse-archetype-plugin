@@ -1,7 +1,9 @@
 package ${package}.utils
-import  org.apache.log4j.Logger
+import org.apache.log4j.Logger
+import org.apache.log4j.RollingFileAppender
+import org.apache.log4j.PatternLayout
 
-class Log(name:String){
+class Logging(name:String) {
   private val logger = Logger.getLogger(name)
 
   def info(message:String,prefix:Boolean = true) =
@@ -14,4 +16,14 @@ class Log(name:String){
     if (prefix) logger.debug(message) else println(message)
 
   def isDebugEnabled = logger.isDebugEnabled
+
+  def updateFileAppender(log_file:String) = {
+    val layout = new PatternLayout("%d{ISO8601} [%t] %-5p %c %x - %m%n")
+    try {
+      val fileAppender = new RollingFileAppender(layout, log_file, true)
+      this.logger.addAppender(fileAppender)
+    } catch {
+      case e: Exception => e.printStackTrace()
+    }
+  }
 }

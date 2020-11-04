@@ -1,11 +1,11 @@
 package ${package};
-import ${package}.utils.Log;
+import ${package}.utils.Logging;
 
 /**
  * @author 
  */
 public class JavaApp {
-    public static Log log = new Log("JavaApp");
+    public static Log log = new Logging("JavaApp");
     public static void printHello(){
         log.info("Hello World from Java",true);
     }
